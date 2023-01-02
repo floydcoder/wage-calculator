@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn_calculate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/granite_light_blue"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+   >
+
+    <EditText
+        android:id="@+id/txt_hours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/hours_worked_hint"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:visibility="visible"
+        android:background="@color/granite_blue"
+        android:layout_margin="88dp"
+        />
+
+    <EditText
+        android:id="@+id/txt_wage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:autoText="false"
+        android:ems="10"
+        android:hint="@string/hourly_wage_hint"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:background="@color/granite_blue"
+        android:layout_margin="88dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_gross_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="@string/gross"
+        android:textAlignment="center"
+        android:textColor="@color/main_text"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txt_tax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/tax"
+        android:textAlignment="center"
+        android:textColor="@color/main_text"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txt_net"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/net"
+        android:textAlignment="center"
+        android:textColor="@color/main_text"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_calc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/button_calculate" />
+</LinearLayout>
